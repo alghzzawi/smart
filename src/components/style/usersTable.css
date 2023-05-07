@@ -1,64 +1,97 @@
 table {
-    margin-top: 20px;
-    margin-left: 20px;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th, td {
-    text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead tr th {
+  color: black;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+th {
+  background-color: #c2c2c2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+tr:hover {
+  background-color: #3500976c;
+}
+
+.usersName {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 10px;
+}
+
+.usersName img {
+  border-radius: 100%;
+  width: 30px;
+}
+
+.name_email {
+  line-height: 0.001;
+}
+
+.name_email p:first-child {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.name_email p:last-child {
+  font-weight: 100;
+  color: #6d6d6d;
+  font-size: small;
+}
+
+.table_foot {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 0.8rem;
     padding: 8px;
   }
-  
-  th {
-    background-color: #c2c2c2;
-    color: white;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #ffffff;
+
+  .usersName img {
+    width: 20px;
   }
 
-  tr:nth-child(odd) {
-    background-color: #f1f1f1;
-  }
-  
-  tr:hover {
-    background-color: #3500976c;
+  table {
+    overflow-x: auto;
   }
 
-  .usersName{
-    height: 20px;
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    padding: 10px;
+  .table_foot {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
-  .usersName img{
-    border-radius: 100%;
-    width: 30px;
+  .table_foot p {
+    font-size: 0.8rem;
+    padding: 5px;
   }
-
-  .name_email{
-    line-height: 0.001;
-  }
-
-  .name_email p:first-child{
-    font-weight: 500;
-  }
-
-  .name_email p:last-child{
-    font-weight: 100;
-    color: #6d6d6d;
-    font-size: small;
-  }
-  
-  .table_foot{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    width: 100%;
-  }
-
-  
+}
