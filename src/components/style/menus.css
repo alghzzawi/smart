@@ -1,0 +1,45 @@
+.Menus_nav{
+    width: 210px;
+    background-color: #ffffff;
+
+}
+.logo{
+    margin: 30px 0px;
+}
+
+.logo p{
+    padding-left: 30px;
+    font-weight: 900;
+    font-size: large;
+}
+
+.ul_menus {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+  
+.a_menus {
+    display: block;
+    color: #36335c;
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color on hover */
+.a_menus:hover {
+    background-color: #303df3;
+    border-radius: 6px;
+    color: white;
+}
+
+.Logout_button{
+    margin-left: 10px;
+    background-color: #ffffff;
+    padding: 8px 50px;
+    border-color: #303df3;
+    border-radius: 6px;
+}
